@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1000" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- TÍTULO -->
+    <mxCell id="title" value="Ataraxia Parkour — Integración de vistas arquitectónicas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="10" width="1080" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAPA 1: NEGOCIO -->
+    <!-- ═══════════════════════════════════════════ -->
+    <mxCell id="neg_bg" value="Vista de negocio&#xa;Procesos operativos del gimnasio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;verticalAlign=top;arcSize=4;" vertex="1" parent="1">
+      <mxGeometry x="40" y="50" width="1080" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="neg1" value="Pago de clases&#xa;Efectivo / transferencia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5a6c8;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="70" y="100" width="280" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="neg2" value="Registro de clases&#xa;Profesor anota en Excel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5a6c8;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="100" width="280" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="neg3" value="Control de asistencia&#xa;Descuento de clase por alumno" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5a6c8;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="100" width="280" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Arrow 1→2 -->
+    <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="neg_bg" target="info_bg" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAPA 2: INFORMACIÓN -->
+    <!-- ═══════════════════════════════════════════ -->
+    <mxCell id="info_bg" value="Vista de información&#xa;Entidades de datos que se gestionan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;verticalAlign=top;arcSize=4;" vertex="1" parent="1">
+      <mxGeometry x="40" y="230" width="1080" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="info1" value="Estudiante&#xa;Nombre, edad, condición médica" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a9c4a0;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="70" y="280" width="300" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="info2" value="Paquete de clases&#xa;Clases compradas, monto pagado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a9c4a0;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="280" width="300" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="info3" value="Asistencia&#xa;Clases restantes por alumno" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a9c4a0;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="280" width="280" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Arrow 2→3 -->
+    <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="info_bg" target="apps_bg" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAPA 3: APLICACIONES -->
+    <!-- ═══════════════════════════════════════════ -->
+    <mxCell id="apps_bg" value="Vista de aplicaciones&#xa;Herramientas que soportan los procesos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;verticalAlign=top;arcSize=4;" vertex="1" parent="1">
+      <mxGeometry x="40" y="410" width="1080" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="apps1" value="Excel Online&#xa;Registro, asistencia, pagos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8a58d;strokeColor=#d44000;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="160" y="460" width="320" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="apps2" value="WhatsApp Business&#xa;Comunicación con estudiantes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8a58d;strokeColor=#d44000;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="680" y="460" width="320" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="apps_warn" value="⚠ Sin integración entre herramientas — todo el flujo de datos es manual" style="text;html=1;strokeColor=#d44000;fillColor=#fff4f0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="160" y="525" width="840" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Arrow 3→4 -->
+    <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="apps_bg" target="infra_bg" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAPA 4: INFRAESTRUCTURA -->
+    <!-- ═══════════════════════════════════════════ -->
+    <mxCell id="infra_bg" value="Vista de infraestructura&#xa;Plataforma donde viven los datos y herramientas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;verticalAlign=top;arcSize=4;" vertex="1" parent="1">
+      <mxGeometry x="40" y="610" width="1080" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="infra1" value="Microsoft 365 (nube)&#xa;Excel Online compartido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0d0a0;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="160" y="660" width="360" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="infra2" value="WhatsApp / Meta Cloud&#xa;Mensajería en la nube" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0d0a0;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="640" y="660" width="360" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- Arrow 4→5 -->
+    <mxCell id="arr4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="infra_bg" target="seg_bg" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CAPA 5: SEGURIDAD -->
+    <!-- ═══════════════════════════════════════════ -->
+    <mxCell id="seg_bg" value="Vista de seguridad&#xa;Controles actuales (heredados de las plataformas)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;verticalAlign=top;arcSize=4;" vertex="1" parent="1">
+      <mxGeometry x="40" y="790" width="1080" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="seg1" value="Acceso por invitación&#xa;Solo usuarios añadidos ven el Excel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a0a0;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="70" y="840" width="320" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="seg2" value="Autenticación M365&#xa;Login con cuenta Microsoft" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a0a0;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="840" width="320" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="seg3" value="Sin RBAC&#xa;Brecha identificada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a0a0;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="840" width="280" height="56" as="geometry" />
+    </mxCell>
+
+    <!-- RELACIÓN TRANSVERSAL: seguridad protege todo -->
+    <mxCell id="sec_cross" value="protege (transversal)" style="edgeStyle=elbowEdgeStyle;elbow=vertical;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#b85450;fontColor=#b85450;fontSize=10;" edge="1" source="seg_bg" target="neg_bg" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="20" y="850" /><mxPoint x="20" y="110" /></Array></mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
